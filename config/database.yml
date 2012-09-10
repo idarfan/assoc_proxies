@@ -12,7 +12,7 @@ development:
   database: assoc_proxies
   pool: 5
   username: root
-  password: a770314a
+  password: 
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -25,7 +25,7 @@ test:
   database: assoc_proxies
   pool: 5
   username: root
-  password: a770314a
+  password: 
   socket: /var/run/mysqld/mysqld.sock
 
 production:
@@ -35,5 +35,5 @@ production:
   database: assoc_proxies
   pool: 5
   username: root
-  password: a770314a
+  password: 
   socket: /var/run/mysqld/mysqld.sock
