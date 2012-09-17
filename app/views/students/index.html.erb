@@ -21,5 +21,26 @@
 </table>
 
 <br />
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Graduating year</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @below.each do |below| %>
+  <tr>
+    <td><%= below.name %></td>
+    <td><%= below.graduating_year %></td>
+    <td><%= link_to 'Show', student %></td>
+    <td><%= link_to 'Edit', edit_student_path(student) %></td>
+    <td><%= link_to 'Destroy', student, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
 
 <%= link_to 'New Student', new_student_path %>

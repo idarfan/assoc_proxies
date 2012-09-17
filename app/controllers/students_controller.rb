@@ -3,6 +3,8 @@ class StudentsController < ApplicationController
   # GET /students.xml
   def index
     @students = Student.all
+    @grades = Grade.all
+    @below = Student.grade.below_average
 
     respond_to do |format|
       format.html # index.html.erb
